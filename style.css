@@ -1,22 +1,104 @@
-body {
-  font-family: Arial;
+* {
   margin: 0;
-  background: #0f172a;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
 }
 
-section {
-  padding: 50px;
-  text-align: center;
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
 }
 
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
 .hero {
-  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #3b82f6;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 40px;
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* PROJECTS */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-  background: #1e293b;
-  margin: 15px;
+  width: 300px;
+  margin: 20px;
   padding: 20px;
-  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade 1s forwards;
+}
+
+.delay {
+  animation-delay: 0.5s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
