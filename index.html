@@ -4,50 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hitesh Saini | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Hitesh</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <h1>Hitesh Saini</h1>
-    <p>Full Stack Developer</p>
+    <h1 class="fade-in">Hitesh Saini</h1>
+    <p class="fade-in delay">Full Stack Developer | Java | Spring Boot | React</p>
+    <a href="#projects" class="btn fade-in delay2">View Projects</a>
   </section>
 
   <!-- ABOUT -->
-  <section class="about">
+  <section id="about" class="glass">
     <h2>About Me</h2>
     <p>
-      Detail-oriented Full Stack Developer skilled in Java, Spring Boot, React, and MySQL.
+      Detail-oriented Full Stack Developer with hands-on experience in building responsive web applications using HTML, CSS, and React, along with developing robust backend systems using Java and Spring Boot. Skilled in REST APIs, debugging, and scalable system design.
     </p>
   </section>
 
   <!-- PROJECTS -->
-  <section class="projects">
+  <section id="projects">
     <h2>Projects</h2>
 
-    <div class="card">
-      <h3>Bank Management System</h3>
-      <p>Java + JDBC + MySQL</p>
-    </div>
+    <div class="project-container">
 
-    <div class="card">
-      <h3>Uber Backend System</h3>
-      <p>Spring Boot + MySQL</p>
-    </div>
+      <div class="card glass">
+        <h3>Bank Management System</h3>
+        <p>Developed a banking system with account creation, fund transfer, and transaction history using Java, JDBC, and MySQL. Implemented authentication and error handling.</p>
+        <button>GitHub</button>
+      </div>
 
-    <div class="card">
-      <h3>TalentFlow Job Platform</h3>
-      <p>React + JavaScript</p>
-    </div>
+      <div class="card glass">
+        <h3>Uber Backend System</h3>
+        <p>Built a scalable backend for ride booking and tracking using Spring Boot. Integrated REST APIs, Hibernate, and MySQL with role-based authentication.</p>
+        <button>GitHub</button>
+      </div>
 
+      <div class="card glass">
+        <h3>TalentFlow Job Platform</h3>
+        <p>Created a responsive hiring platform using React, HTML, CSS, and JavaScript with dynamic UI for job posting and candidate tracking.</p>
+        <button>GitHub</button>
+      </div>
+
+    </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact">
+  <section id="contact" class="glass">
     <h2>Contact</h2>
     <p>Email: hiteshsaini.24.03.02@gmail.com</p>
+    <p>Phone: 9116602664</p>
+    <a href="https://github.com/hiteshsaini24" target="_blank" class="btn">GitHub</a>
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
